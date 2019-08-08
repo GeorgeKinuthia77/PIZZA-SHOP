@@ -7,5 +7,5 @@ def four_Ow_four(error):
     '''
     Function to render the 404 error page
     '''
-    title = 'Marinara Pizza seems to be having a glitch, hang in there.'
+    title = 'Pizza inn seems to be having a glitch, hang in there.'
     return render_template('fourOwfour.html', title=title),404
