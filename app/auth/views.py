@@ -31,7 +31,7 @@ def register():
         user = User(email = form.email.data, username = form.username.data,password = form.password.data)
         db.session.add(user)
         db.session.commit()
-        mail_message("Rafiki welcome to Marinara Pizza House","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to Pizza inn House","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
         title = "New Pizza Buddy"
